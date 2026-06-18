@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>小彬又買玩具了 | 玩具收藏與新聞作品集</title>
+    <meta
+      name="description"
+      content="小彬又買玩具了，從個人收藏出發，記錄玩具新聞、開箱、攝影作品與流行文化觀察。"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="回到首頁">
+        <span class="brand-mark">彬</span>
+        <span>
+          <strong>玩具士彬</strong>
+          <small>玩具收藏與新聞作品集</small>
+        </span>
+      </a>
+      <nav class="top-nav" aria-label="主要導覽">
+        <a href="#articles">文章</a>
+        <a href="#portfolio">攝影</a>
+        <a href="#about">關於我</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Toy Collecting / News / Unboxing</p>
+          <h1>小彬又買玩具了</h1>
+          <p>
+            這是一個從個人收藏出發的玩具作品網站。這裡記錄近期玩具新聞、開箱觀察、攝影作品。希望透過這裡，把每一件收藏背後吸引我的地方記錄下來，也分享給同樣喜歡玩具的人。
+          </p>
+          <div class="signal-strip" aria-label="編輯能力摘要">
+            <article>
+              <strong>玩具情報</strong>
+              <span>追蹤新品發表、預購資訊、展會消息與收藏圈討論。</span>
+            </article>
+            <article>
+              <strong>收藏觀點</strong>
+              <span>從個人收藏角度整理玩具的角色魅力、造型特色與入手理由。</span>
+            </article>
+            <article>
+              <strong>開箱攝影</strong>
+              <span>規劃盒裝、配件、可動、比例對照與展示情境拍攝。</span>
+            </article>
+          </div>
+        </div>
+        <div class="toy-desk" aria-label="招財們玩具照片">
+          <img src="招財們.jpg" alt="招財們玩具照片" />
+        </div>
+      </section>
+
+      <section id="articles" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Toy News & Collector Insights</p>
+          <h2>玩具新聞與收藏觀察</h2>
+          <p>這裡收錄我整理的近期玩具新聞，也會加入個人收藏角度、開箱觀點與入手判斷。</p>
+        </div>
+        <div id="articleGrid" class="article-grid"></div>
+      </section>
+
+      <section id="reader" class="reader-section" hidden>
+        <button id="closeReader" class="button ghost compact" type="button">返回文章列表</button>
+        <div id="readerContent" class="reader-shell"></div>
+      </section>
+
+      <section id="portfolio" class="section portfolio">
+        <div class="section-heading">
+          <p class="eyebrow">Photo / Unboxing</p>
+          <h2>收藏攝影與開箱紀錄</h2>
+          <p>玩具收藏實拍與開箱照片，點擊後可以查看同系列的更多細節照片。</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" data-group="abao" data-photos='["abao1.jpg","abao2.jpg","abao3.jpg"]'>
+            <img src="abao1.jpg" alt="abao">
+            <span class="gallery-ip">ABAO x GRAPEBRAIN</span>
+            <span class="gallery-count">3 張</span>
+          </div>
+          <div class="gallery-item" data-group="幕奇" data-photos='["幕奇1.jpg","幕奇2.jpg","幕奇3.jpg","幕奇4.jpg","幕奇5.jpg","幕奇6.jpg","幕奇7.jpg","幕奇8.jpg"]'>
+            <img src="幕奇1.jpg" alt="幕奇">
+            <span class="gallery-ip">INSTINCTOY</span>
+            <span class="gallery-count">8 張</span>
+          </div>
+          <div class="gallery-item" data-group="毛怪" data-photos='["毛怪1.jpg","毛怪2.jpg","毛怪3.jpg"]'>
+            <img src="毛怪1.jpg" alt="毛怪">
+            <span class="gallery-ip">INSTINCTOY</span>
+            <span class="gallery-count">3 張</span>
+          </div>
+          <div class="gallery-item" data-group="油屋" data-photos='["油屋1.jpg","油屋2.jpg","油屋3.jpg","油屋4.jpg","油屋5.jpg","油屋6.jpg","油屋7.jpg"]'>
+            <img src="油屋1.jpg" alt="油屋">
+            <span class="gallery-ip">OPM</span>
+            <span class="gallery-count">7 張</span>
+          </div>
+          <div class="gallery-item" data-group="百貓紅蓮" data-photos='["百貓紅蓮1.jpg","百貓紅蓮2.jpg","百貓紅蓮3.jpg","百貓紅蓮4.jpg","百貓紅蓮5.jpg","百貓紅蓮6.jpg","百貓紅蓮7.jpg"]'>
+            <img src="百貓紅蓮1.jpg" alt="百貓紅蓮">
+            <span class="gallery-ip">OFFART</span>
+            <span class="gallery-count">7 張</span>
+          </div>
+          <div class="gallery-item" data-group="霍爾" data-photos='["霍爾1.jpg","霍爾2.jpg","霍爾3.jpg","霍爾4.jpg","霍爾5.jpg","霍爾6.jpg","霍爾7.jpg","霍爾8.jpg","霍爾9.jpg","霍爾10.jpg"]'>
+            <img src="霍爾1.jpg" alt="霍爾">
+            <span class="gallery-ip">OPM</span>
+            <span class="gallery-count">10 張</span>
+          </div>
+          <div class="gallery-item" data-group="kingjun" data-photos='["kingjun1.jpg","kingjun2.jpg"]'>
+            <img src="kingjun1.jpg" alt="kingjun">
+            <span class="gallery-ip">KINGJUN</span>
+            <span class="gallery-count">2 張</span>
+          </div>
+          <div class="gallery-item" data-group="中箭兔" data-photos='["中箭兔1.jpg","中箭兔2.jpg","中箭兔3.jpg","中箭兔4.jpg","中箭兔5.jpg"]'>
+            <img src="中箭兔1.jpg" alt="中箭兔">
+            <span class="gallery-ip">ANOUSAGI</span>
+            <span class="gallery-count">5 張</span>
+          </div>
+          <div class="gallery-item" data-group="加菲貓" data-photos='["加菲貓1.jpg","加菲貓2.jpg","加菲貓3.jpg","加菲貓4.jpg","加菲貓5.jpg","加菲貓6.jpg"]'>
+            <img src="加菲貓1.jpg" alt="加菲貓">
+            <span class="gallery-ip">ZCWO</span>
+            <span class="gallery-count">6 張</span>
+          </div>
+          <div class="gallery-item" data-group="小丑女" data-photos='["小丑女1.jpg","小丑女2.jpg","小丑女3.jpg"]'>
+            <img src="小丑女1.jpg" alt="小丑女">
+            <span class="gallery-ip">ABAO</span>
+            <span class="gallery-count">3 張</span>
+          </div>
+          <div class="gallery-item" data-group="幻狐舍" data-photos='["幻狐舍1.jpg","幻狐舍2.jpg","幻狐舍3.jpg","幻狐舍4.jpg"]'>
+            <img src="幻狐舍1.jpg" alt="幻狐舍">
+            <span class="gallery-ip">GENKOSHA</span>
+            <span class="gallery-count">4 張</span>
+          </div>
+          <div class="gallery-item" data-group="汽水clubbabo" data-photos='["汽水clubbabo1.jpg","汽水clubbabo2.jpg","汽水clubbabo3.jpg","汽水clubbabo4.jpg"]'>
+            <img src="汽水clubbabo1.jpg" alt="汽水clubbabo">
+            <span class="gallery-ip">CLUBBABO</span>
+            <span class="gallery-count">4 張</span>
+          </div>
+          <div class="gallery-item" data-group="福興樓" data-photos='["福興樓1.jpg","福興樓2.jpg","福興樓3.jpg","福興樓4.jpg","福興樓5.jpg"]'>
+            <img src="福興樓1.jpg" alt="福興樓">
+            <span class="gallery-ip">FUKKRURO</span>
+            <span class="gallery-count">5 張</span>
+          </div>
+          <div class="gallery-item" data-group="舒小狗" data-photos='["舒小狗1.jpg","舒小狗2.jpg","舒小狗3.jpg","舒小狗4.jpg"]'>
+            <img src="舒小狗1.jpg" alt="舒小狗">
+            <span class="gallery-ip">SU.FELTING</span>
+            <span class="gallery-count">4 張</span>
+          </div>
+          <div class="gallery-item" data-group="clubbabo" data-photos='["clubbabo.jpg"]'>
+            <img src="clubbabo.jpg" alt="clubbabo">
+            <span class="gallery-ip">CLUBBABO</span>
+            <span class="gallery-count">1 張</span>
+          </div>
+          <div class="gallery-item" data-group="happiclass" data-photos='["happiclass.jpg"]'>
+            <img src="happiclass.jpg" alt="happiclass">
+            <span class="gallery-ip">HAPPICLASS</span>
+            <span class="gallery-count">1 張</span>
+          </div>
+          <div class="gallery-item" data-group="molly與冰塊" data-photos='["molly與冰塊.jpg"]'>
+            <img src="molly與冰塊.jpg" alt="molly與冰塊">
+            <span class="gallery-ip">INSTINCTOY x MOLLY</span>
+            <span class="gallery-count">1 張</span>
+          </div>
+          <div class="gallery-item" data-group="冰塊" data-photos='["冰塊.jpg"]'>
+            <img src="冰塊.jpg" alt="冰塊">
+            <span class="gallery-ip">INSTINCTOY</span>
+            <span class="gallery-count">1 張</span>
+          </div>
+          <div class="gallery-item" data-group="大久保molly" data-photos='["大久保molly.jpg"]'>
+            <img src="大久保molly.jpg" alt="大久保molly">
+            <span class="gallery-ip">INSTINCTOY x MOLLY</span>
+            <span class="gallery-count">1 張</span>
+          </div>
+          <div class="gallery-item" data-group="腦味噌" data-photos='["腦味噌.jpg"]'>
+            <img src="腦味噌.jpg" alt="腦味噌">
+            <span class="gallery-ip">GRAPEBRAIN</span>
+            <span class="gallery-count">1 張</span>
+          </div>
+          <div class="gallery-item" data-group="酷美拉" data-photos='["酷美拉.jpg"]'>
+            <img src="酷美拉.jpg" alt="酷美拉">
+            <span class="gallery-ip">ONE_PLAY_TOYS</span>
+            <span class="gallery-count">1 張</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="photo-modal" id="photoModal">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-box">
+          <button class="modal-close" id="modalClose">✕</button>
+          <div class="modal-scroll" id="modalScroll"></div>
+        </div>
+      </div>
+
+      <section id="about" class="section about-section">
+        <div class="about-layout">
+          <div class="section-heading">
+            <h2>關於我</h2>
+            <p>我是小彬</p>
+            <p>一開始只是買買盲盒，享受不知道會抽到什麼的期待感。後來慢慢接觸到設計師玩具，才發現原來公仔不只是可愛或帥氣而已，每一件作品背後都有創作者的風格、角色設定、材質選擇和細節安排。</p>
+            <p>對我來說，收藏玩具不只是把東西擺在架上，而是在記錄某個當下被作品打動的理由。有些是因為角色設計很有個性，有些是因為造型很有記憶點，也有些只是單純看到就覺得開心。</p>
+          </div>
+          <div class="about-photo">
+            <img src="小彬.jpg" alt="小彬">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 玩具士彬 - toy collecting and news portfolio</p>
+      <p>從個人收藏出發，記錄玩具新聞、開箱與流行文化觀察。</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
