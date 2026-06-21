@@ -451,7 +451,7 @@ h1, h2, h3 {
   aspect-ratio: 16 / 9;
   display: block;
   object-fit: cover;
-  object-position: center 35%;
+  object-position: center 45%;
   border-radius: 8px;
   background: #f0ebe2;
   margin-bottom: 4px;
@@ -535,6 +535,14 @@ h1, h2, h3 {
 
 .reader-feature-image.is-zoomed {
   transform: scale(1.12);
+}
+
+.reader-feature-image.is-fit-height {
+  height: 100%;
+  max-height: none;
+  max-width: none;
+  width: auto;
+  object-fit: contain;
 }
 
 .reader-image-nav {

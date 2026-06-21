@@ -269,7 +269,7 @@ function openArticle(id) {
     ? `<aside class="reader-image-panel" data-gallery='${JSON.stringify(images)}' data-index="0">
         <div class="reader-image-frame">
           ${hasMultiple ? `<button class="reader-image-nav prev" type="button" aria-label="上一張">&#8249;</button>` : ""}
-          <img src="${images[0]}" alt="${article.title}" class="reader-feature-image${images[0].includes("Derpy Tiger1") ? " is-zoomed" : ""}">
+          <img src="${images[0]}" alt="${article.title}" class="reader-feature-image is-fit-height${images[0].includes("Derpy Tiger1") ? " is-zoomed" : ""}">
           ${hasMultiple ? `<button class="reader-image-nav next" type="button" aria-label="下一張">&#8250;</button>` : ""}
         </div>
         <div class="reader-image-footer">
@@ -306,6 +306,7 @@ function openArticle(id) {
       index = (nextIndex + gallery.length) % gallery.length;
       img.src = gallery[index];
       img.classList.toggle("is-zoomed", index === 0 && gallery[0].includes("Derpy Tiger1"));
+      img.classList.toggle("is-fit-height", index === 0);
       count.textContent = `${index + 1} / ${gallery.length}`;
       const creditEl = panel.querySelector(".image-credit");
       if (creditEl) {
