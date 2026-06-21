@@ -394,6 +394,7 @@ h1, h2, h3 {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  overflow: hidden;
 }
 
 .article-card h3,
@@ -451,7 +452,9 @@ h1, h2, h3 {
   aspect-ratio: 16 / 9;
   display: block;
   object-fit: cover;
-  object-position: center 45%;
+  object-position: center 30%;
+  transform: scale(1.08);
+  transform-origin: center 30%;
   border-radius: 8px;
   background: #f0ebe2;
   margin-bottom: 4px;
@@ -539,10 +542,11 @@ h1, h2, h3 {
 
 .reader-feature-image.is-fit-height {
   height: 100%;
-  max-height: none;
-  max-width: none;
+  min-height: 100%;
   width: auto;
-  object-fit: contain;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
 }
 
 .reader-image-nav {
