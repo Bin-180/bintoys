@@ -110,6 +110,8 @@ const sampleArticles = [
   }
 ];
 
+sampleArticles.sort((a, b) => b.date.localeCompare(a.date));
+
 const articleGrid = document.querySelector("#articleGrid");
 const readerSection = document.querySelector("#reader");
 const readerContent = document.querySelector("#readerContent");
