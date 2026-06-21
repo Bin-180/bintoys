@@ -62,7 +62,21 @@ const sampleArticles = [
     category: "積木新品",
     date: "2026-06-18",
     source: "https://www.gamesradar.com/toys-collectibles/this-lego-pinball-machine-actually-works-and-its-a-love-letter-to-all-things-70s-arcades/",
-    images: [],
+    images: [
+      "彈珠檯樂高1.jpg",
+      "彈珠檯樂高2.jpg",
+      "彈珠檯樂高3.jpg",
+      "彈珠檯樂高4.jpg",
+      "彈珠檯樂高5.jpg",
+      "彈珠檯樂高6.jpg",
+      "彈珠檯樂高8.jpg",
+      "彈珠檯樂高9.jpg",
+      "彈珠檯樂高10.jpg",
+      "彈珠檯樂高11.jpg",
+      "彈珠檯樂高12.jpg",
+      "彈珠檯樂高13.jpg",
+      "彈珠檯樂高14.jpg"
+    ],
     imageCredit: "LEGO",
     summary:
       "LEGO Arcade Pinball Machine 預計 2026 年 7 月 4 日上市，18+ 系列、2,274 片、售價 229.99 美元。這款不是把彈珠台外觀做成靜態模型，而是真的配有彈簧發射器、雙撥桿和旋轉碰撞器，可以實際遊玩。我覺得這是 LEGO 成人收藏品開始從「拼完看」轉向「拼完玩」的一個明確訊號。",
