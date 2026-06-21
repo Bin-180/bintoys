@@ -451,6 +451,7 @@ h1, h2, h3 {
   aspect-ratio: 16 / 9;
   display: block;
   object-fit: cover;
+  object-position: center 35%;
   border-radius: 8px;
   background: #f0ebe2;
   margin-bottom: 4px;
