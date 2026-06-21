@@ -161,7 +161,15 @@ const sampleArticles = [
     category: "電影周邊",
     date: "2026-04-30",
     source: "https://people.com/hasbro-will-release-star-wars-ultimate-grogu-baby-yoda-animatronic-11960871",
-    images: [],
+    thumbnailImage: "BabyYoda1.jpg",
+    images: [
+      "BabyYoda1.jpg",
+      "BabyYoda2.jpg",
+      "BabyYoda3.jpg",
+      "BabyYoda4.jpg",
+      "BabyYoda5.jpg",
+      "BabyYoda6.jpg"
+    ],
     imageCredit: "Hasbro",
     summary:
       "Hasbro 推出 Star Wars: Ultimate Grogu，售價 599.99 美元，是《The Mandalorian and Grogu》電影拍攝中 Grogu 替身道具的 1:1 複製收藏品，高約 14.6 吋、近 9 磅，具備超過 250 種動畫與聲音組合，並能感應回應聲音、觸碰與方向。這不是一般兒童玩具，而是把電子寵物、角色情感與電影道具感融合在一起的高價收藏。",
