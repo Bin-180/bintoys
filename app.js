@@ -103,8 +103,36 @@ const sampleArticles = [
     category: "電影周邊",
     date: "2026-06-17",
     source: "https://www.techradar.com/streaming/entertainment/i-rounded-up-the-best-toy-story-5-toys-and-merch-these-are-the-high-tech-figures-lego-sets-and-apparel-worth-buying",
-    images: [],
+    thumbnailImage: "玩具總動員1.jpg",
+    images: [
+      "玩具總動員2.jpg",
+      "玩具總動員3.jpg",
+      "玩具總動員4.jpg",
+      "玩具總動員5.jpg",
+      "玩具總動員6.jpg",
+      "玩具總動員7.jpg",
+      "玩具總動員8.jpg",
+      "玩具總動員9.jpg",
+      "玩具總動員10.jpg",
+      "玩具總動員11.jpg",
+      "玩具總動員12.jpg",
+      "玩具總動員13.jpg"
+    ],
     imageCredit: "Disney Pixar / Mattel",
+    imageCredits: [
+      "MATTEL",
+      "MATTEL",
+      "MATTEL",
+      "MATTEL",
+      "LEAPFROG",
+      "LEAPFROG",
+      "LEGO",
+      "LEGO",
+      "LEGO",
+      "VTECH",
+      "MATTEL",
+      "FUNKO"
+    ],
     summary:
       "《Toy Story 5》上映前，Mattel 推出具備臉部動作與互相對話設計的高互動 Woody 與 Buzz，同期還有 PlayScale 人偶、LeapFrog 平板玩具、Funko Pop、LEGO 盒組與 Adidas 聯名等周邊陣容。Toy Story 的商品化很特別，因為電影本身就在講玩具，角色與現實玩具之間的距離天然比其他 IP 更近。",
     body:
@@ -175,9 +203,11 @@ function renderArticles() {
   articleGrid.innerHTML = articles
     .map((article) => {
       const sample = sampleArticles.find((s) => s.id === article.id);
-      const thumbnail = sample && Array.isArray(sample.images) && sample.images.length
-        ? sample.images[0]
-        : "";
+      const thumbnail = sample && sample.thumbnailImage
+        ? sample.thumbnailImage
+        : sample && Array.isArray(sample.images) && sample.images.length
+          ? sample.images[0]
+          : "";
 
       return `
         <article class="article-card">
@@ -206,6 +236,8 @@ function openArticle(id) {
   const sample = sampleArticles.find((s) => s.id === id);
   const images = (sample && sample.images) || [];
   const imageCredit = (sample && sample.imageCredit) || "";
+  const imageCredits = (sample && sample.imageCredits) || [];
+  const initialCredit = imageCredits.length ? (imageCredits[0] || imageCredit) : imageCredit;
 
   const hasMultiple = images.length > 1;
   const imagePanel = images.length
@@ -217,7 +249,7 @@ function openArticle(id) {
         </div>
         <div class="reader-image-footer">
           <span class="reader-image-count">1 / ${images.length}</span>
-          <span class="image-credit">圖片來源：${imageCredit}</span>
+          <span class="image-credit">圖片來源：${initialCredit}</span>
         </div>
       </aside>`
     : "";
@@ -250,6 +282,11 @@ function openArticle(id) {
       img.src = gallery[index];
       img.classList.toggle("is-zoomed", index === 0 && gallery[0].includes("Derpy Tiger1"));
       count.textContent = `${index + 1} / ${gallery.length}`;
+      const creditEl = panel.querySelector(".image-credit");
+      if (creditEl) {
+        const credit = imageCredits.length ? (imageCredits[index] || imageCredit) : imageCredit;
+        creditEl.textContent = `圖片來源：${credit}`;
+      }
     }
 
     const prev = panel.querySelector(".prev");
